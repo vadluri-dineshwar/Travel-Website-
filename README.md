@@ -1,2 +1,116 @@
-# Travel-Website-
+
 Elewayte Web Development Project
+
+
+Travel Website – Backend Development (PHP + MySQL)
+
+Project Overview
+  This project is a Travel Website designed to manage travel destinations, customer enquiries, and booking-related information.
+  It demonstrates a full backend implementation using PHP, MySQL, and Bootstrap for responsive design.
+
+The project allows users to:
+   View travel destinations
+   Submit travel enquiries
+   Store user details and messages securely in a database
+
+
+Technologies Used
+Component	Technology
+
+  Frontend	HTML, CSS, Bootstrap 5
+  Backend	PHP
+  Database	MySQL
+  Server	XAMPP (Apache + MySQL)
+  IDE	Visual Studio Code
+
+
+
+Project Structure
+
+travel_website_DIn/
+│
+├── index.php
+├── about.php
+├── contact.php
+├── destination.php
+├── submit_enquiry.php
+├── db_connect.php
+├── style.css
+└── README.md
+
+
+ Database Structure
+
+  Database Name: travel_db
+  Table Name: enquiries
+  Column Name	Data Type	Description
+
+id	INT (AUTO_INCREMENT, PRIMARY KEY)	Unique enquiry ID
+name	VARCHAR(100)	Customer name
+mail	VARCHAR(100)	Customer email
+source	VARCHAR(100)	Source location
+destination	VARCHAR(100)	Destination location
+travel_date	DATE	Planned travel date
+message	TEXT	Additional message
+
+Features
+
+  View popular travel destinations
+  Submit an enquiry form
+  Store and manage data in MySQL
+  Responsive UI using Bootstrap
+  Simple and beginner-friendly backend logic
+
+
+How to Run the Project
+
+1. Install XAMPP
+
+  Download from https://www.apachefriends.org/
+  Start Apache and MySQL modules.
+
+2. Setup the Project
+
+   Copy your project folder travel_website_DIn to:
+   C:\xampp\htdocs\
+
+
+3. Create Database
+
+Open phpMyAdmin: http://localhost:80/phpmyadmin
+Create a new database named travel_db.
+Import the table or run this SQL command:
+
+CREATE TABLE enquiries (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100),
+  mail VARCHAR(100),
+  source VARCHAR(100),
+  destination VARCHAR(100),
+  travel_date DATE,
+  message TEXT
+);
+
+
+
+4. Run the Project
+
+  Open your browser and go to:
+  http://localhost/travel_website_Din/
+
+
+Future Enhancements
+  Add admin dashboard to view/manage enquiries
+  Include user authentication (login/signup)
+  Add booking confirmation emails
+  Integrate payment gateway
+  Implement search and filter functionality
+
+
+Author
+
+Name: Vadluri Dineshwar
+Course: B. Tech (2022–2026)
+Project Type: Major Project – Backend Development
+Tech Stack: PHP | MySQL | HTML | CSS | Bootstrap
+Project Title: TRAVEL_WEBSITE_DIN
